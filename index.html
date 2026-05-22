@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅行予算管理ツール【無料】記録・管理アプリ</title>
+    <meta name="description" content="旅行の予算配分（交通・宿泊・食事・観光）を管理。実績vs計画を比較。登録不要・完全無料でご利用いただけます。">
+    <link rel="canonical" href="https://appadaycreator.github.io/travel-budget-tracker/">
+    <meta property="og:title" content="旅行予算管理ツール【無料】記録・管理アプリ">
+    <meta property="og:description" content="旅行の予算配分（交通・宿泊・食事・観光）を管理。実績vs計画を比較。登録不要・完全無料でご利用いただけます。">
+    <meta property="og:url" content="https://appadaycreator.github.io/travel-budget-tracker/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ja_JP">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✈️</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.clarity.ms">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <!-- GTM -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TXQGZRF9');</script>
+    <!-- Clarity -->
+    <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","s3t9vl8h3v");</script>
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8427583028015858" crossorigin="anonymous"></script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"旅行予算管理ツール","description":"旅行の予算配分（交通・宿泊・食事・観光）を管理。実績vs計画を比較。登録不要・完全無料でご利用いただけます。","url":"https://appadaycreator.github.io/travel-budget-tracker/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"JPY"}}</script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', 'Noto Sans JP', sans-serif; background: linear-gradient(135deg, #DBEAFE 0%, #EFF6FF 100%); min-height: 100vh; color: #333; line-height: 1.6; }
+        .site-header { background: #2563EB; color: white; padding: 32px 20px; text-align: center; }
+        .site-header .emoji { font-size: 52px; margin-bottom: 8px; }
+        .site-header h1 { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
+        .site-header p { font-size: 14px; opacity: 0.9; }
+        .container { max-width: 800px; margin: 0 auto; padding: 16px; }
+        .card { background: white; border-radius: 16px; padding: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 16px; }
+        .btn { background: #2563EB; color: white; border: none; padding: 14px 24px; border-radius: 10px; font-size: 16px; font-weight: 600; cursor: pointer; width: 100%; transition: opacity .2s; }
+        .btn:hover { opacity: 0.9; }
+        .btn:active { transform: scale(0.98); }
+        input, select, textarea { width: 100%; padding: 10px 14px; border: 1.5px solid #e2e8f0; border-radius: 8px; font-size: 15px; margin-top: 4px; font-family: inherit; }
+        input:focus, select:focus { outline: none; border-color: #2563EB; }
+        label { font-size: 13px; font-weight: 600; color: #555; display: block; margin-top: 14px; margin-bottom: 2px; }
+        .result { display: none; }
+        .result.show { display: block; }
+        .result-value { font-size: 36px; font-weight: 700; color: #2563EB; text-align: center; padding: 16px 0; }
+        .badge { display: inline-block; background: #2563EB20; color: #2563EB; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+        /* ── サービス固有CSS ── */
+
+        .category-tag {
+          display: inline-block;
+          padding: 2px 10px;
+          border-radius: 20px;
+          font-size: 11px;
+          font-weight: 700;
+          margin-right: 6px;
+        }
+        .cat-transport { background: #DBEAFE; color: #1D4ED8; }
+        .cat-hotel     { background: #FEF9C3; color: #92400E; }
+        .cat-food      { background: #DCFCE7; color: #166534; }
+        .cat-sightseeing { background: #FCE7F3; color: #9D174D; }
+        .cat-other     { background: #F3F4F6; color: #374151; }
+        .budget-bar-wrap {
+          background: #E5E7EB;
+          border-radius: 6px;
+          height: 10px;
+          overflow: hidden;
+          margin: 4px 0 8px;
+        }
+        .budget-bar {
+          height: 100%;
+          border-radius: 6px;
+          transition: width 0.4s;
+        }
+        select#entry-category {
+          width: 100%;
+          padding: 10px 12px;
+          border: 1px solid #D1D5DB;
+          border-radius: 8px;
+          font-size: 14px;
+          margin-bottom: 10px;
+          background: #fff;
+        }
+    </style>
+</head>
+<body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TXQGZRF9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <header class="site-header">
+        <div class="emoji">✈️</div>
+        <h1>旅行予算管理ツール</h1>
+        <p>旅行の予算配分（交通・宿泊・食事・観光）を管理。実績vs計画を比較。</p>
+    </header>
+
+    <main class="container">
+        <ins class="adsbygoogle" style="display:block;margin:12px 0" data-ad-client="ca-pub-8427583028015858" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+        <div class="card">
+          <h2 style="font-size:18px;font-weight:700;margin-bottom:16px;">✈️ 記録を追加</h2>
+
+          <label style="font-size:13px;font-weight:600;color:#374151;display:block;margin-bottom:4px;">カテゴリ</label>
+          <select id="entry-category">
+            <option value="transport">🚄 交通</option>
+            <option value="hotel">🏨 宿泊</option>
+            <option value="food">🍜 食事</option>
+            <option value="sightseeing">🗺️ 観光</option>
+            <option value="other">📦 その他</option>
+          </select>
+
+          <label style="font-size:13px;font-weight:600;color:#374151;display:block;margin-bottom:4px;">内容</label>
+          <input type="text" id="entry-desc" placeholder="例: 新幹線 東京→大阪" style="width:100%;padding:10px 12px;border:1px solid #D1D5DB;border-radius:8px;font-size:14px;margin-bottom:10px;box-sizing:border-box;">
+
+          <label style="font-size:13px;font-weight:600;color:#374151;display:block;margin-bottom:4px;">金額（円）</label>
+          <input type="number" id="entry-amount" placeholder="例: 13500" min="0" style="width:100%;padding:10px 12px;border:1px solid #D1D5DB;border-radius:8px;font-size:14px;margin-bottom:10px;box-sizing:border-box;">
+
+          <label style="font-size:13px;font-weight:600;color:#374151;display:block;margin-bottom:4px;">予算（任意・円）</label>
+          <input type="number" id="entry-budget" placeholder="例: 15000" min="0" style="width:100%;padding:10px 12px;border:1px solid #D1D5DB;border-radius:8px;font-size:14px;margin-bottom:10px;box-sizing:border-box;">
+
+          <button class="btn" style="margin-top:6px;" onclick="addEntry()">追加する</button>
+        </div>
+        <div class="card" style="margin-top:12px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+            <h2 style="font-size:16px;font-weight:700;">📋 記録一覧</h2>
+            <span id="entry-count" style="font-size:12px;color:#999;"></span>
+          </div>
+          <div id="entries">
+            <p style="text-align:center;color:#bbb;font-size:14px;padding:20px;">まだ記録がありません</p>
+          </div>
+        </div>
+        <div class="result" id="result" style="margin-top:12px;">
+          <div class="card">
+            <h3 style="font-size:14px;font-weight:700;margin-bottom:8px;color:#2563EB;">📊 サマリー</h3>
+            <div id="summary"></div>
+          </div>
+        </div>
+
+        <!-- 関連サービス -->
+        <div class="card" style="margin-top:8px;">
+            <h3 style="font-size:13px;font-weight:600;color:#888;margin-bottom:10px;">🔗 関連サービス</h3>
+            <div style="display:flex;flex-direction:column;gap:6px;">
+                <a href="https://appadaycreator.github.io/domestic-travel-planner/" style="color:#6366f1;font-size:13px;text-decoration:none;padding:6px 0;border-bottom:1px solid #f1f5f9;">✈️ 国内旅行費用シミュレーター →</a>
+                <a href="https://appadaycreator.github.io/travel-style-finder/" style="color:#6366f1;font-size:13px;text-decoration:none;padding:6px 0;border-bottom:1px solid #f1f5f9;">旅行スタイル診断 →</a>
+                <a href="https://appadaycreator.github.io/packing-checklist/" style="color:#6366f1;font-size:13px;text-decoration:none;padding:6px 0;border-bottom:1px solid #f1f5f9;">忘れ物ゼロ →</a>
+            </div>
+        </div>
+
+        <ins class="adsbygoogle" style="display:block;margin:12px 0" data-ad-client="ca-pub-8427583028015858" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </main>
+
+    <footer style="text-align:center;padding:20px;color:white;font-size:12px;opacity:0.75;margin-top:8px;">
+        <p><a href="https://appadaycreator.github.io/" style="color:white;">AppADayCreator</a>
+        | <a href="privacy-policy.html" style="color:white;">プライバシーポリシー</a>
+        | <a href="terms.html" style="color:white;">利用規約</a>
+        | <a href="contact.html" style="color:white;">お問い合わせ</a></p>
+        <p style="margin-top:6px;">© 2025 AppADayCreator. All services are free.</p>
+    </footer>
+
+    <script>
+    const BTN_COLOR = '#2563EB';
+    const STORAGE_KEY = 'travel-budget-tracker-entries';
+    let entries = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+
+    const CAT_LABELS = {
+      transport: '🚄 交通',
+      hotel: '🏨 宿泊',
+      food: '🍜 食事',
+      sightseeing: '🗺️ 観光',
+      other: '📦 その他'
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+      renderEntries();
+      updateSummary();
+      if (entries.length > 0) {
+        document.getElementById('result').classList.add('show');
+      }
+    });
+
+    function addEntry() {
+      const desc   = document.getElementById('entry-desc').value.trim();
+      const amount = parseFloat(document.getElementById('entry-amount').value);
+      const budget = parseFloat(document.getElementById('entry-budget').value) || 0;
+      const cat    = document.getElementById('entry-category').value;
+
+      if (!desc) { alert('内容を入力してください'); return; }
+      if (isNaN(amount) || amount < 0) { alert('金額を正しく入力してください'); return; }
+
+      const entry = {
+        id: Date.now(),
+        date: new Date().toLocaleDateString('ja-JP'),
+        desc,
+        amount,
+        budget,
+        category: cat
+      };
+      entries.unshift(entry);
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(entries));
+      renderEntries();
+      updateSummary();
+
+      // フォームをリセット
+      document.getElementById('entry-desc').value = '';
+      document.getElementById('entry-amount').value = '';
+      document.getElementById('entry-budget').value = '';
+      document.getElementById('result').classList.add('show');
+    }
+
+    function deleteEntry(id) {
+      entries = entries.filter(e => e.id !== id);
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(entries));
+      renderEntries();
+      updateSummary();
+      if (entries.length === 0) {
+        document.getElementById('result').classList.remove('show');
+      }
+    }
+
+    function renderEntries() {
+      const container = document.getElementById('entries');
+      document.getElementById('entry-count').textContent = entries.length + '件';
+      if (entries.length === 0) {
+        container.innerHTML = '<p style="text-align:center;color:#bbb;font-size:14px;padding:20px;">まだ記録がありません</p>';
+        return;
+      }
+      container.innerHTML = entries.map(e => {
+        const overBudget = e.budget > 0 && e.amount > e.budget;
+        const barPct = e.budget > 0 ? Math.min(100, Math.round(e.amount / e.budget * 100)) : 0;
+        const barColor = barPct >= 100 ? '#ef4444' : barPct >= 80 ? '#f59e0b' : '#22c55e';
+        const catClass = 'cat-' + e.category;
+        return `
+        <div style="padding:10px 4px;border-bottom:1px solid #f1f5f9;">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+            <div style="flex:1;min-width:0;">
+              <span class="category-tag ${catClass}">${CAT_LABELS[e.category] || e.category}</span>
+              <span style="font-size:13px;font-weight:600;color:#1e293b;">${e.desc}</span>
+              <div style="font-size:11px;color:#999;margin-top:2px;">${e.date}</div>
+              ${e.budget > 0 ? `
+              <div class="budget-bar-wrap">
+                <div class="budget-bar" style="width:${barPct}%;background:${barColor};"></div>
+              </div>
+              <div style="font-size:11px;color:${barColor};">予算 ¥${e.budget.toLocaleString()} のうち ${barPct}% 使用${overBudget ? ' ⚠️ 超過' : ''}</div>
+              ` : ''}
+            </div>
+            <div style="text-align:right;margin-left:12px;flex-shrink:0;">
+              <div style="font-size:16px;font-weight:700;color:${overBudget ? '#ef4444' : '#2563EB'};">¥${e.amount.toLocaleString()}</div>
+              <button onclick="deleteEntry(${e.id})" style="color:#ef4444;background:none;border:none;cursor:pointer;font-size:12px;margin-top:4px;">削除</button>
+            </div>
+          </div>
+        </div>`;
+      }).join('');
+    }
+
+    function updateSummary() {
+      const total = entries.reduce((s, e) => s + e.amount, 0);
+      const totalBudget = entries.reduce((s, e) => s + e.budget, 0);
+      const cats = {};
+      entries.forEach(e => {
+        cats[e.category] = (cats[e.category] || 0) + e.amount;
+      });
+
+      const catRows = Object.entries(cats).sort((a,b) => b[1]-a[1]).map(([k,v]) =>
+        `<div style="display:flex;justify-content:space-between;font-size:13px;padding:3px 0;">
+          <span>${CAT_LABELS[k] || k}</span>
+          <span style="font-weight:600;">¥${v.toLocaleString()}</span>
+        </div>`
+      ).join('');
+
+      const budgetRow = totalBudget > 0 ? `
+        <div style="margin-top:10px;padding-top:10px;border-top:1px solid #e5e7eb;">
+          <div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:4px;">
+            <span>合計予算</span><span style="font-weight:600;">¥${totalBudget.toLocaleString()}</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:13px;">
+            <span>残予算</span>
+            <span style="font-weight:700;color:${totalBudget - total >= 0 ? '#22c55e' : '#ef4444'};">
+              ¥${(totalBudget - total).toLocaleString()}
+            </span>
+          </div>
+        </div>` : '';
+
+      document.getElementById('summary').innerHTML = `
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid #e5e7eb;">
+          <span style="font-size:14px;font-weight:600;color:#374151;">合計支出</span>
+          <span style="font-size:22px;font-weight:800;color:#2563EB;">¥${total.toLocaleString()}</span>
+        </div>
+        <div style="font-size:12px;font-weight:700;color:#6B7280;margin-bottom:6px;">カテゴリ別</div>
+        ${catRows}
+        ${budgetRow}
+        <div style="margin-top:8px;font-size:12px;color:#999;">記録件数: ${entries.length}件</div>
+      `;
+    }
+    </script>
+</body>
+</html>
