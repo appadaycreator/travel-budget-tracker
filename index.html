@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<!-- Consent Mode v2 -->
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{'analytics_storage':'denied','ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','wait_for_update':500});(function(){try{var k='cookie-consent-v2',o='cookie-consent';var c=localStorage.getItem(k);if(!c&&localStorage.getItem(o)==='1')c='granted';if(c){var s=c==='granted'?'granted':'denied';gtag('consent','update',{'analytics_storage':s,'ad_storage':s,'ad_user_data':s,'ad_personalization':s});}}catch(e){}})();</script>
+<!-- End Consent Mode v2 -->
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":
 new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],
@@ -12,9 +15,12 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#2563EB" />
     <title>旅行予算管理ツール【無料】記録・管理アプリ</title>
-    <meta name="description" content="旅行の予算配分（交通・宿泊・食事・観光）を管理。実績vs計画を比較。登録不要・完全無料でご利用いただけます。スマホ・PC対応。登録不要・完全無料。">
+    <meta name="description" content="旅行の予算配分（交通・宿泊・食事・観光）を管理。実績vs計画を比較">
+<meta name="author" content="AppADayCreator">
     <link rel="canonical" href="https://appadaycreator.com/travel-budget-tracker/">
-    <link rel="manifest" href="/travel-budget-tracker/manifest.json">
+    <meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="manifest" href="/travel-budget-tracker/manifest.json">
     <meta property="og:title" content="旅行予算管理ツール【無料】記録・管理アプリ">
     <meta property="og:description" content="旅行の予算配分（交通・宿泊・食事・観光）を管理。実績vs計画を比較。登録不要・完全無料でご利用いただけます。">
     <meta property="og:url" content="https://appadaycreator.com/travel-budget-tracker/">
@@ -39,19 +45,21 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
     <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","s3t9vl8h3v");</script>
     <!-- AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8427583028015858" crossorigin="anonymous"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"旅行予算管理ツール","description":"旅行の予算配分（交通・宿泊・食事・観光）を管理。実績vs計画を比較。登録不要・完全無料でご利用いただけます。","url":"https://appadaycreator.com/travel-budget-tracker/","applicationCategory":"UtilityApplication","operatingSystem":"Any","inLanguage":"ja","offers":{"@type":"Offer","price":"0","priceCurrency":"JPY"},"author":{"@type":"Organization","name":"AppADayCreator","url":"https://appadaycreator.com/"}}</script>
-    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "旅行予算管理ツールは無料で使えますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい、完全無料・登録不要でご利用いただけます。"}}, {"@type": "Question", "name": "記録データはどこに保存されますか？", "acceptedAnswer": {"@type": "Answer", "text": "ご使用のブラウザのローカルストレージに保存されます。他のデバイスとは共有されません。"}}, {"@type": "Question", "name": "ブラウザを閉じても記録は残りますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい、同じブラウザを使う限りデータは保持されます。"}}, {"@type": "Question", "name": "記録を削除するにはどうすればいいですか？", "acceptedAnswer": {"@type": "Answer", "text": "リセットボタン、またはブラウザのサイトデータをクリアすることで削除できます。"}}, {"@type": "Question", "name": "スマートフォンで利用できますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい、スマートフォン・タブレット・PCすべてでご利用いただけます。"}}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"記録データはどこに保存されますか？","acceptedAnswer":{"@type":"Answer","text":"ご使用のブラウザのローカルストレージに保存されます。他のデバイスとは共有されません。"}},{"@type":"Question","name":"ブラウザを閉じても記録は残りますか？","acceptedAnswer":{"@type":"Answer","text":"はい、同じブラウザを使う限りデータは保持されます。"}},{"@type":"Question","name":"記録を削除するにはどうすればいいですか？","acceptedAnswer":{"@type":"Answer","text":"リセットボタン、またはブラウザのサイトデータをクリアすることで削除できます。"}}]}</script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"旅行予算管理ツール【無料】記録・管理アプリの使い方","step":[{"@type":"HowToStep","position":1,"name":"必要事項を入力する","text":"フォームに必要な情報（数値・選択肢・条件）を入力または選択する"},{"@type":"HowToStep","position":2,"name":"診断・計算を実行する","text":"「診断する」「計算する」または「確認する」ボタンを押して結果を取得する"},{"@type":"HowToStep","position":3,"name":"結果・分析を確認する","text":"表示された診断結果・計算結果・グラフをじっくり確認する"},{"@type":"HowToStep","position":4,"name":"アドバイスを活用する","text":"結果に基づくアドバイスや提案を日常生活に取り入れる"},{"@type":"HowToStep","position":5,"name":"定期的に再チェックする","text":"生活変化に応じて定期的に再診断して進捗を追跡する"}]}</script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', 'Noto Sans JP', sans-serif; background: linear-gradient(135deg, #DBEAFE 0%, #EFF6FF 100%); min-height: 100vh; color: #333; line-height: 1.6; }
+        body { font-family: 'Inter', 'Noto Sans JP', sans-serif; background: #f8fafc; min-height: 100vh; color: #333; line-height: 1.6; }
         .site-header { background: #2563EB; color: white; padding: 32px 20px; text-align: center; }
         .site-header .emoji { font-size: 52px; margin-bottom: 8px; }
         .site-header h1 { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
         .site-header p { font-size: 14px; opacity: 0.9; }
         .container { max-width: 800px; margin: 0 auto; padding: 16px; }
         .card { background: white; border-radius: 16px; padding: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 16px; }
-        .btn { background: #2563EB; color: white; border: none; padding: 14px 24px; border-radius: 10px; font-size: 16px; font-weight: 600; cursor: pointer; width: 100%; transition: opacity .2s; min-height: 48px; touch-action: manipulation; }
+        .btn { background: linear-gradient(135deg,#0EA5E9,#0284C7); color: white; border: none; padding: 14px 24px; border-radius: 10px; font-size: 16px; font-weight: 700; cursor: pointer; width: 100%; transition: opacity .2s; min-height: 48px; touch-action: manipulation; box-shadow: 0 6px 16px rgba(14,165,233,.28); }
         .btn:hover { opacity: 0.9; }
         .btn:active { transform: scale(0.98); }
         .btn:focus-visible { outline: 3px solid #2563EB; outline-offset: 3px; }
@@ -70,6 +78,9 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
             .card { padding: 16px; }
             .btn { font-size: 15px; padding: 13px 20px; }
             .result-value { font-size: 28px; }
+            /* V4: モバイルでCookie同意バナーと競合しないようにパディング追加 */
+            body { padding-bottom: 120px; }
+            .breadcrumb-desktop { display: none !important; }
         }
         /* ── サービス固有CSS ── */
 
@@ -108,8 +119,18 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
           background: #fff;
         }
     
+#budgetChartContainer { text-align: center; margin: 20px 0; }
+#budgetChart { max-width: 300px; margin: 0 auto; }
+.export-buttons { display: flex; gap: 8px; margin-top: 16px; flex-wrap: wrap; }
+.export-btn { flex: 1; min-width: 140px; background: #10b981; color: white; border: none; padding: 11px 16px; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; min-height: 44px; transition: opacity 0.2s; }
+.export-btn:hover { opacity: 0.9; }
+.export-btn:active { transform: scale(0.98); }
+.export-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.toast { position: fixed; bottom: 20px; right: 20px; background: #1f2937; color: white; padding: 12px 20px; border-radius: 8px; font-size: 13px; z-index: 9999; animation: slideIn 0.3s ease; }
+@keyframes slideIn { from { transform: translateX(400px); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+@media (max-width: 480px) { #budgetChart { max-width: 240px; } .export-buttons { flex-direction: column; } .export-btn { width: 100%; } .toast { left: 16px; right: 16px; bottom: 16px; } }
 @media print{
-  header,footer,nav,button,.no-print,
+  header,footer,nav,button,.no-print,.export-buttons,
   [class*="share"],[class*="affiliate"],[id*="share"],
   [id*="affiliate"],[id*="banner"],
   script,noscript{display:none!important}
@@ -120,6 +141,57 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
 
 /* AdSense unfilled: collapse empty ad slots */
 ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!important;height:0!important}
+
+/* ===== redesign v2 (brand sky) ===== */
+:root{--brand:#0EA5E9;--brand-d:#0284C7;--accent:#F59E0B;--ink:#0f2942;--muted:#5b7185;--line:#e3eef6;}
+body{background:#f3f9fd;}
+.tbt-nav{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+.tbt-nav-in{display:flex;align-items:center;gap:16px;padding:11px 20px;max-width:1120px;margin:0 auto;}
+.tbt-logo{display:flex;align-items:center;gap:9px;font-weight:800;color:var(--ink);font-size:16px;text-decoration:none;}
+.tbt-logo img{width:28px;height:28px;}
+.tbt-nav-links{display:flex;gap:22px;margin-left:auto;}
+.tbt-nav-links a{color:#33506b;text-decoration:none;font-size:14px;font-weight:600;}
+.tbt-nav-links a:hover{color:var(--brand);}
+.tbt-nav-cta{background:var(--accent);color:#fff;padding:9px 17px;border-radius:10px;font-weight:700;font-size:14px;text-decoration:none;white-space:nowrap;box-shadow:0 6px 16px rgba(245,158,11,.3);}
+@media(max-width:820px){.tbt-nav-links{display:none;}}
+.tbt-hero{position:relative;color:#fff;overflow:hidden;}
+.tbt-hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;}
+.tbt-hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,rgba(3,28,52,.82),rgba(2,68,116,.62) 50%,rgba(14,165,233,.4));}
+.tbt-hero-in{position:relative;z-index:2;max-width:1120px;margin:0 auto;padding:64px 20px 72px;}
+.tbt-hero-eyebrow{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);padding:5px 13px;border-radius:30px;font-size:12px;font-weight:600;margin-bottom:18px;}
+.tbt-hero h1{font-size:clamp(28px,5vw,46px);font-weight:800;line-height:1.2;margin:0 0 16px;color:#fff;text-shadow:0 2px 16px rgba(0,0,0,.3);}
+.tbt-hero h1 .y{color:var(--accent);}
+.tbt-hero p.lead{font-size:clamp(14px,2vw,17px);max-width:560px;margin:0 0 26px;color:#eaf4fb;}
+.tbt-hero-btns{display:flex;gap:12px;flex-wrap:wrap;}
+.tbt-bp{background:var(--accent);color:#fff;padding:14px 28px;border-radius:12px;font-size:16px;font-weight:800;text-decoration:none;box-shadow:0 10px 24px rgba(245,158,11,.4);}
+.tbt-bg2{background:rgba(255,255,255,.14);color:#fff;border:1.5px solid rgba(255,255,255,.6);padding:14px 24px;border-radius:12px;font-size:15px;font-weight:700;text-decoration:none;}
+.tbt-hero-chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:24px;}
+.tbt-hero-chips span{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);padding:6px 13px;border-radius:24px;font-size:12.5px;font-weight:600;}
+.tbt-sec{max-width:1120px;margin:0 auto;padding:56px 20px;}
+.tbt-sec-h{text-align:center;font-size:26px;font-weight:800;color:var(--ink);margin:0 0 6px;}
+.tbt-sec-sub{text-align:center;color:var(--muted);font-size:14px;margin:0 0 36px;}
+.tbt-abar{display:block;width:50px;height:5px;border-radius:3px;background:var(--accent);margin:12px auto 0;}
+.tbt-g3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+@media(max-width:880px){.tbt-g3{grid-template-columns:1fr;}}
+.tbt-fcard{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 22px;box-shadow:0 6px 22px rgba(15,41,66,.05);transition:transform .15s,box-shadow .15s;}
+.tbt-fcard:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(15,41,66,.1);}
+.tbt-fic{width:56px;height:56px;border-radius:14px;background:linear-gradient(135deg,#e0f3fd,#cdeafb);display:flex;align-items:center;justify-content:center;margin-bottom:14px;}
+.tbt-fic img{width:34px;height:34px;}
+.tbt-fcard h3{font-size:16px;font-weight:800;color:var(--ink);margin:0 0 7px;}
+.tbt-fcard p{font-size:13.5px;color:var(--muted);margin:0;}
+.tbt-scard{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 6px 22px rgba(15,41,66,.06);position:relative;}
+.tbt-scard .ph{height:160px;background-size:cover;background-position:center;}
+.tbt-scard .b{padding:20px;}
+.tbt-snum{position:absolute;top:12px;left:12px;width:38px;height:38px;border-radius:50%;background:var(--brand);color:#fff;font-weight:800;font-size:17px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(14,165,233,.45);}
+.tbt-scard h3{font-size:17px;font-weight:800;color:var(--ink);margin:0 0 7px;}
+.tbt-scard p{font-size:13.5px;color:var(--muted);margin:0;}
+.tbt-cta{position:relative;color:#fff;overflow:hidden;text-align:center;}
+.tbt-cta-bg{position:absolute;inset:0;background-size:cover;background-position:center;}
+.tbt-cta-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,rgba(2,68,116,.92),rgba(14,165,233,.82));}
+.tbt-cta-in{position:relative;z-index:2;padding:64px 20px;max-width:720px;margin:0 auto;}
+.tbt-cta-in h2{font-size:clamp(22px,4vw,32px);font-weight:800;margin:0 0 12px;color:#fff;}
+.tbt-cta-in p{font-size:15px;color:#e7f4fb;margin:0 0 26px;}
+@media(max-width:600px){.tbt-sec{padding:44px 20px;}.tbt-sec-h{font-size:21px;}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://appadaycreator.com/"},{"@type":"ListItem","position":2,"name":"計算機/お金","item":"https://appadaycreator.com/category/finance/"},{"@type":"ListItem","position":3,"name":"旅行予算管理ツール記録・管理アプリ","item":"https://appadaycreator.com/travel-budget-tracker/"}]}</script>
 </head>
@@ -128,21 +200,137 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
 
     <a href="#main-content" class="sr-only" style="position:absolute;top:8px;left:8px;background:#2563EB;color:white;padding:8px 16px;border-radius:6px;z-index:9999;text-decoration:none;font-size:14px;" tabindex="1">メインコンテンツへスキップ</a>
 
-    <header class="site-header" role="banner">
-        <div class="emoji" aria-hidden="true">✈️</div>
-        <h1>旅行予算管理ツール</h1>
-        <p>旅行の予算配分（交通・宿泊・食事・観光）を管理。実績vs計画を比較。</p>
-    </header>
+    <!-- ===== NAV ===== -->
+    <nav class="tbt-nav" role="banner">
+      <div class="tbt-nav-in">
+        <a href="/travel-budget-tracker/lp/" class="tbt-logo"><img src="assets/icons/split/01-01.png" alt="">旅行予算管理ツール</a>
+        <div class="tbt-nav-links">
+          <a href="#main-content">記録ツール</a>
+          <a href="#tbt-features">特徴</a>
+          <a href="#tbt-how">使い方</a>
+          <a href="/travel-budget-tracker/lp/">サービス紹介</a>
+        </div>
+        <a href="#entry-category" class="tbt-nav-cta" onclick="document.getElementById('entry-category').focus()">予算を作成する</a>
+      </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="tbt-hero">
+      <div class="tbt-hero-bg" style="background-image:url('assets/photos/photo_01.jpg')"></div>
+      <div class="tbt-hero-in">
+        <span class="tbt-hero-eyebrow">登録不要・完全無料 / 多通貨対応</span>
+        <h1>旅行予算を<span class="y">賢く管理</span></h1>
+        <p class="lead">交通・宿泊・食事・観光の支出をリアルタイムで記録。予算との差分やカテゴリ別の内訳をその場で確認し、旅の使いすぎを防ぎます。</p>
+        <div class="tbt-hero-btns">
+          <a href="#entry-category" class="tbt-bp" onclick="document.getElementById('entry-category').focus()">予算を作成する</a>
+          <a href="#tbt-how" class="tbt-bg2">使い方を見る</a>
+        </div>
+        <div class="tbt-hero-chips">
+          <span><img src="assets/icons/split/02-01.png" style="width:18px;height:18px" alt="">多通貨対応</span>
+          <span><img src="assets/icons/split/03-08.png" style="width:18px;height:18px" alt="">グラフで見える化</span>
+          <span><img src="assets/icons/split/02-06.png" style="width:18px;height:18px" alt="">共同編集</span>
+          <span><img src="assets/icons/split/04-06.png" style="width:18px;height:18px" alt="">データ安全</span>
+        </div>
+      </div>
+    </section>
+<div style="background:linear-gradient(90deg,#2563eb,#7c3aed);padding:12px 16px;text-align:right;font-size:.9rem;box-shadow:0 2px 4px rgba(0,0,0,0.1)"><a href="/blog/" style="color:#ffffff;text-decoration:none;font-weight:700">📖 コラム</a>&nbsp;｜&nbsp;<a href="/" style="color:#ffffff;text-decoration:none;font-weight:700">🏠 ホーム</a></div>
+<!-- V2: パンくず統一（デスクトップ/モバイル重複解消） -->
+<nav aria-label="パンくずリスト" style="background:#f8fafc;border-bottom:1px solid #e2e8f0;padding:6px 16px;">
+  <ol style="display:flex;flex-wrap:wrap;align-items:center;gap:4px;font-size:0.8rem;color:#6b7280;list-style:none;margin:0;padding:0;">
+    <li><a href="https://appadaycreator.com/" style="color:#4b5563;text-decoration:none;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#4b5563'">ホーム</a></li>
+    <li style="color:#9ca3af;">›</li>
+    <li style="color:#1f2937;">旅行予算管理ツール</li>
+  </ol>
+</nav>
 
     <main id="main-content" class="container" role="main" aria-label="旅行予算管理ツールのメインコンテンツ">
-        <ins class="adsbygoogle" style="display:block;min-height:0;margin:12px 0" data-ad-client="ca-pub-8427583028015858" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
-        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        <ins class="adsbygoogle" style="display:block;min-height:90px;margin:12px 0" data-ad-client="ca-pub-8427583028015858" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>try{try{(adsbygoogle = window.adsbygoogle || []).push({});}catch(e){}}catch(e){}</script>
+
+        <!-- V1: ファーストビューメインCTA強化 -->
+        <div style="background:linear-gradient(135deg,#0ea5e9 0%,#06b6d4 100%);border-radius:12px;padding:24px 20px;margin:16px 0;text-align:center;box-shadow:0 4px 20px rgba(6,182,212,.2)">
+          <h2 style="font-size:18px;font-weight:700;color:#ffffff;margin:0 0 10px">旅行中の支出をリアルタイム管理</h2>
+          <p style="color:rgba(255,255,255,.9);font-size:14px;margin:0 0 16px;line-height:1.5">現地での支出をカテゴリ別に記録。予算との差分を即座に確認して、使いすぎを防ぎましょう</p>
+          <button onclick="document.getElementById('entry-category').focus();document.querySelector('label:has(#entry-category)').scrollIntoView({behavior:'smooth'})" style="background:#ffffff;color:#0ea5e9;border:none;padding:14px 32px;border-radius:10px;font-size:16px;font-weight:700;cursor:pointer;display:inline-block;transition:all .2s;min-height:48px" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">📝 記録を追加する</button>
+        </div>
 
         <div class="card">
-          <h2 style="font-size:18px;font-weight:700;margin-bottom:16px;">✈️ 記録を追加</h2>
+          <div id="tool-desc-box" style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:1.5rem 1.75rem;margin:1.5rem 0">
+  <p style="color:#374151;margin:0 0 .75rem;line-height:1.75;font-size:.92rem">旅行予算管理ツール【無料】記録・管理アプリは、AppADayCreatorが提供する完全無料の管理・計画ツールです。登録・ログイン不要で、すぐにご利用いただけます。</p>
+</div>
+<div style="background:#eaf4fb;border-left:4px solid #1976d2;padding:20px 24px;margin:24px 0;border-radius:0 8px 8px 0">
+  <h3 style="font-size:1.1rem;font-weight:800;color:#1e3a5f">このツールでできること</h3>
+  <p style="margin:8px 0 0;line-height:1.7;color:#1a1a2e">旅行中の実際の支出を現地でリアルタイム入力すると、予算との差額・カテゴリ別の支出状況を即座に確認できます。外貨の日本円換算機能も備えています。</p>
+</div>
+<div style="background:#f0fdf4;border-left:4px solid #388e3c;padding:20px 24px;margin:24px 0;border-radius:0 8px 8px 0">
+  <h3 style="font-size:1.1rem;font-weight:800;color:#1b5e20">活用シーン・使い方</h3>
+  <p style="margin:8px 0 0;line-height:1.7;color:#1a1a2e">海外旅行中の予算オーバー防止や、旅行後の支出記録として活用できます。バックパッカー旅行の日次予算管理や、複数人での旅費の割り勘計算にも役立ちます。</p>
+</div>
+<div style="background:#fff8e1;border-left:4px solid #f57c00;padding:20px 24px;margin:24px 0;border-radius:0 8px 8px 0">
+  <h3 style="font-size:1.1rem;font-weight:800;color:#e65100">注意点・補足</h3>
+  <p style="margin:8px 0 0;line-height:1.7;color:#1a1a2e">為替レートはリアルタイムに変動します。重要な金額の確認は最新の為替情報をご確認ください。海外でのクレジットカード使用時は手数料も考慮してください。</p>
+</div>
+<!-- r22-editorial (v3: 信頼性指標を目立たせる) -->
+<div style="background:linear-gradient(135deg,#eff6ff 0%,#dbeafe 100%);border:2px solid #2563eb;border-radius:.75rem;padding:1.5rem;margin:1.5rem 0">
+  <h2 style="font-size:1.05rem;font-weight:800;color:#1e3a8a;margin:0 0 1.2rem;border-left:4px solid #2563eb;padding-left:.75rem">旅行・観光の実態データ（観光庁）</h2>
+  <!-- V3: キー数字ハイライト -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.25rem">
+    <div style="background:#ffffff;border-left:4px solid #dc2626;border-radius:8px;padding:1rem;box-shadow:0 2px 8px rgba(37,99,235,.08)">
+      <div style="font-size:.8rem;color:#6b7280;margin-bottom:.35rem">📊 国内旅行の平均費用</div>
+      <div style="font-size:1.6rem;font-weight:800;color:#2563eb">¥3.9万</div>
+      <div style="font-size:.75rem;color:#9ca3af">/人・1回あたり（2023年）</div>
+    </div>
+    <div style="background:#ffffff;border-left:4px solid #059669;border-radius:8px;padding:1rem;box-shadow:0 2px 8px rgba(37,99,235,.08)">
+      <div style="font-size:.8rem;color:#6b7280;margin-bottom:.35rem">👥 年間国内旅行者数</div>
+      <div style="font-size:1.6rem;font-weight:800;color:#2563eb">5.5億</div>
+      <div style="font-size:.75rem;color:#9ca3af">人回（宿泊旅行）</div>
+    </div>
+  </div>
+  <p style="font-size:.88rem;color:#4b5563;margin:0 0 .75rem">観光庁「旅行・観光消費動向調査」をもとに整理しました。</p>
+  <table style="width:100%;border-collapse:collapse;font-size:.83rem">
+    <thead><tr style="background:#dbeafe">
+      <th style="padding:.45rem .65rem;text-align:left;border:1px solid #bfdbfe;color:#1e3a8a;font-size:.78rem">項目</th>
+      <th style="padding:.45rem .65rem;text-align:left;border:1px solid #bfdbfe;color:#1e3a8a;font-size:.78rem">データ</th>
+    </tr></thead>
+    <tbody>
+      <tr style="background:#eff6ff">
+        <td style="padding:.45rem .65rem;border:1px solid #bfdbfe;font-weight:600;color:#1e3a8a;font-size:.8rem">費用の主な内訳</td>
+        <td style="padding:.45rem .65rem;border:1px solid #bfdbfe;font-size:.8rem"><strong>交通40% / 宿泊35% / 食事15%</strong></td>
+      </tr>
+      <tr>
+        <td style="padding:.45rem .65rem;border:1px solid #bfdbfe;font-weight:600;color:#1e3a8a;font-size:.8rem">早期予約割引</td>
+        <td style="padding:.45rem .65rem;border:1px solid #bfdbfe;font-size:.8rem"><strong>1-2ヶ月前で15-30%安くなる場合あり</strong></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!-- r20-tool-links -->
+<div style="background:#f9fafb;border:1px solid #e5e7eb;border-radius:.75rem;padding:1.25rem 1.5rem;margin:2rem 0">
+  <p style="font-weight:700;color:#374151;margin:0 0 .75rem;font-size:.9rem">📖 あわせて読みたいコラム記事</p>
+  <ul style="margin:0;padding-left:1.25rem;color:#4b5563;line-height:2">
+    <li><a href="/blog/domestic-travel-budget-guide/" style="color:#4f46e5">国内旅行の予算の立て方と節約術</a></li>
+    <li><a href="/blog/travel-saving-tips/" style="color:#4f46e5">旅行代金を安くする14の節約術</a></li>
+  </ul>
+</div>
+<div id="tool-disclaimer" style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:1.25rem 1.5rem;margin:1.5rem 0;font-size:.875rem">
+  <p style="font-weight:700;color:#374151;margin:0 0 .5rem">⚠️ 計算結果の活用にあたって</p>
+  <p style="color:#4b5563;margin:0 0 .5rem;line-height:1.75">計算結果は参考値です。実際の税額・給付額・ローン返済額は個人の状況により異なります。重要な財務判断の際は最新の公式情報をご確認のうえ、ファイナンシャルプランナー・税理士等の専門家にご相談ください。</p>
+  <ul style="margin:0;padding-left:1.25rem;color:#4b5563;line-height:1.9"><li><a href="https://www.fsa.go.jp/policy/nisa2/about/index.html" target="_blank" rel="noopener noreferrer" style="color:#4f46e5;font-size:.85rem">金融庁「NISAについて」</a></li><li><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/index2.htm" target="_blank" rel="noopener noreferrer" style="color:#4f46e5;font-size:.85rem">国税庁「タックスアンサー」</a></li></ul>
+</div>
+<h2 style="font-size:18px;font-weight:700;margin-bottom:16px;">✈️ 記録を追加</h2>
+<!-- M8: 入力ガイダンス充実 -->
+<div style="background:linear-gradient(135deg,#f0fdf4 0%,#dcfce7 100%);border:2px solid #15803d;border-radius:10px;padding:14px 16px;margin-bottom:18px;font-size:13px;color:#15803d;line-height:1.7">
+  <div style="font-weight:700;margin-bottom:8px;font-size:14px">💡 入力ガイド - 3ステップで完成</div>
+  <ul style="margin:0;padding-left:20px;line-height:1.9">
+    <li><strong>①カテゴリを選ぶ</strong>：交通・宿泊・食事・観光から1つ選択</li>
+    <li><strong>②内容を入力</strong>：具体例「新幹線 東京→大阪」「ホテル泊」など</li>
+    <li><strong>③金額を記入</strong>：日本円で実際に支払った金額（海外の場合は換算）</li>
+    <li style="color:#059669"><strong>📌 さらに便利に</strong>：上限額（予算）を設定すると、使いすぎを自動チェック</li>
+  </ul>
+</div>
 
-          <label style="font-size:13px;font-weight:600;color:#374151;display:block;margin-bottom:4px;">カテゴリ</label>
-          <select id="entry-category">
+          <label style="font-size:13px;font-weight:600;color:#374151;display:block;margin-bottom:4px;">カテゴリ <span style="color:#999;font-weight:400;">(必須)</span><span style="color:#f59e0b;margin-left:4px;cursor:help" title="交通：飛行機・新幹線・タクシーなど｜宿泊：ホテル・旅館・民泊など｜食事：レストラン・カフェ・スーパーなど｜観光：入場料・体験・ツアーなど｜その他：お土産・日用品など">?</span></label>
+          <select id="entry-category" title="旅行費を5つのカテゴリに分類します：交通（飛行機・電車）、宿泊（ホテル・旅館）、食事（レストラン・カフェ）、観光（体験・入場料）、その他（お土産・雑費）。複数記録して支出傾向を分析できます" aria-label="支出カテゴリを選択：交通、宿泊、食事、観光、その他">
             <option value="transport">🚄 交通</option>
             <option value="hotel">🏨 宿泊</option>
             <option value="food">🍜 食事</option>
@@ -150,16 +338,26 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
             <option value="other">📦 その他</option>
           </select>
 
-          <label style="font-size:13px;font-weight:600;color:#374151;display:block;margin-bottom:4px;">内容</label>
-          <input type="text" id="entry-desc" placeholder="例: 新幹線 東京→大阪" style="width:100%;padding:10px 12px;border:1px solid #D1D5DB;border-radius:8px;font-size:14px;margin-bottom:10px;box-sizing:border-box;">
+          <label style="font-size:13px;font-weight:600;color:#374151;display:block;margin-bottom:4px;">内容 <span style="color:#999;font-weight:400;">(必須)</span><span style="color:#f59e0b;margin-left:4px;cursor:help" title="例）交通：新幹線、往路特急｜宿泊：ホテル1泊、朝食付き｜食事：昼食（ラーメン）、カフェ代｜観光：美術館入場料、温泉体験｜その他：お土産（お菓子）">?</span></label>
+          <input type="text" id="entry-desc" placeholder="例: 新幹線 東京→大阪" title="具体的な内容を入力してください。例）交通類：往路特急、新幹線｜宿泊類：ホテル1泊、朝食付き｜食事類：昼食・夜食・カフェ｜観光類：入場料、体験、ガイド費用｜その他：お土産、雑費。同じカテゴリの支出は別々に記録すると分析しやすくなります" aria-label="支出内容を具体的に入力。例：新幹線 東京→大阪、ホテル泊、カフェ代など" style="width:100%;padding:10px 12px;border:1px solid #D1D5DB;border-radius:8px;font-size:14px;margin-bottom:10px;box-sizing:border-box;">
 
-          <label style="font-size:13px;font-weight:600;color:#374151;display:block;margin-bottom:4px;">金額（円）</label>
-          <input type="number" id="entry-amount" placeholder="例: 13500" min="0" style="width:100%;padding:10px 12px;border:1px solid #D1D5DB;border-radius:8px;font-size:14px;margin-bottom:10px;box-sizing:border-box;">
+          <label style="font-size:13px;font-weight:600;color:#374151;display:block;margin-bottom:4px;">金額（円） <span style="color:#999;font-weight:400;">(必須)</span><span style="color:#f59e0b;margin-left:4px;cursor:help" title="実際に支払った金額を日本円で入力します。海外での支出は日本円に換算してください（参考：1000ドル≈100,000円の場合）。「記録一覧」で支出内容を確認できます">?</span></label>
+          <input type="number" id="entry-amount" placeholder="例: 13500" title="実際に支払った金額を日本円で入力してください。海外での支出は日本円に換算（例：100ドル→現レートで計算）。0円以上の整数値を入力します。小数点の場合は四捨五入してください" aria-label="支出金額を日本円で入力。例：13500。海外での支出は日本円に換算してください" min="0" step="1" style="width:100%;padding:10px 12px;border:1px solid #D1D5DB;border-radius:8px;font-size:14px;margin-bottom:10px;box-sizing:border-box;">
 
-          <label style="font-size:13px;font-weight:600;color:#374151;display:block;margin-bottom:4px;">予算（任意・円）</label>
-          <input type="number" id="entry-budget" placeholder="例: 15000" min="0" style="width:100%;padding:10px 12px;border:1px solid #D1D5DB;border-radius:8px;font-size:14px;margin-bottom:10px;box-sizing:border-box;">
+          <label style="font-size:13px;font-weight:600;color:#374151;display:block;margin-bottom:4px;">予算（任意・円）<span style="color:#f59e0b;margin-left:4px;cursor:help" title="このカテゴリの上限額を設定します。実績金額と比較して「超過」「余裕」を管理できます。参考）国内旅行1人1日の平均3,900円｜カテゴリ別目安：交通30-40%、宿泊30-40%、食費15-20%、観光10-15%">?</span></label>
+          <input type="number" id="entry-budget" placeholder="例: 15000" title="このカテゴリの予算上限（目標額）を入力します。参考：国内旅行の平均日当は3,900円程度。交通費（30-40%）、宿泊費（30-40%）、食費（15-20%）、観光費（10-15%）の目安があります。設定すると実績との差分を自動計算・色分けして表示します" aria-label="このカテゴリの予算上限を入力（任意）。記録する金額との差分・超過率を表示します" min="0" step="1" style="width:100%;padding:10px 12px;border:1px solid #D1D5DB;border-radius:8px;font-size:14px;margin-bottom:10px;box-sizing:border-box;">
 
           <button class="btn" style="margin-top:6px;" onclick="addEntry()">追加する</button>
+        </div>
+        <!-- V5: 関連サービス導線（入力フォーム直下） -->
+        <div class="card" style="margin-top:12px;background:#f0f9ff;border:1px solid #bae6fd">
+            <p style="font-size:13px;font-weight:600;color:#0c4a6e;margin:0 0 10px">📌 このツールをもっと活用する</p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:13px">
+                <a href="https://appadaycreator.com/domestic-travel-planner/" style="color:#2563eb;text-decoration:none;padding:6px 0;border-bottom:1px solid #bae6fd">✈️ 国内旅行費用シミュレーター →</a>
+                <a href="https://appadaycreator.com/travel-style-finder/" style="color:#2563eb;text-decoration:none;padding:6px 0;border-bottom:1px solid #bae6fd">🎯 旅行スタイル診断 →</a>
+                <a href="https://appadaycreator.com/packing-checklist/" style="color:#2563eb;text-decoration:none;padding:6px 0;border-bottom:1px solid #bae6fd">📦 忘れ物チェック →</a>
+                <a href="/blog/" style="color:#2563eb;text-decoration:none;padding:6px 0">📖 旅行コラムを読む →</a>
+            </div>
         </div>
         <div class="card" style="margin-top:12px;">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
@@ -172,8 +370,16 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
         </div>
         <div class="result" id="result" style="margin-top:12px;">
           <div class="card">
-            <h3 style="font-size:14px;font-weight:700;margin-bottom:8px;color:#2563EB;">📊 サマリー</h3>
+            <h3 style="font-size:14px;font-weight:700;margin-bottom:12px;color:#2563EB;">📊 サマリー</h3>
+            <div id="budgetChartContainer" style="margin-bottom:16px;">
+              <canvas id="budgetChart"></canvas>
+            </div>
             <div id="summary"></div>
+            <div class="export-buttons">
+              <button class="export-btn" onclick="printResult()" title="ブラウザの印刷機能を開きます">🖨️ 印刷する</button>
+              <button class="export-btn" id="exportCsvBtn" onclick="exportCSV()" title="CSVファイルをダウンロードします">📥 CSVダウンロード</button>
+              <button class="export-btn" onclick="copyToClipboard()" title="結果をクリップボードにコピーします">📋 結果をコピー</button>
+            </div>
           </div>
         </div>
 
@@ -187,8 +393,8 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
             </div>
         </div>
 
-        <ins class="adsbygoogle" style="display:block;min-height:0;margin:12px 0" data-ad-client="ca-pub-8427583028015858" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
-        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        <ins class="adsbygoogle" style="display:block;min-height:90px;margin:12px 0" data-ad-client="ca-pub-8427583028015858" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>try{try{(adsbygoogle = window.adsbygoogle || []).push({});}catch(e){}}catch(e){}</script>
 
         <!-- 使い方セクション -->
         <div class="card" style="margin-top:8px;background:#f8fafc;">
@@ -206,10 +412,7 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
         <div class="card" style="margin-top:8px;">
             <h2 style="font-size:15px;font-weight:700;margin-bottom:14px;color:#374151;">❓ よくある質問</h2>
             <div style="display:flex;flex-direction:column;gap:14px;">
-            <div style="border-bottom:1px solid #f1f5f9;padding-bottom:12px;">
-              <p style="font-size:14px;font-weight:600;color:#374151;margin-bottom:4px;">Q: 旅行予算管理ツールは無料で使えますか？</p>
-              <p style="font-size:13px;color:#6b7280;line-height:1.7;">A: はい、完全無料・登録不要でご利用いただけます。</p>
-            </div>
+            
             <div style="border-bottom:1px solid #f1f5f9;padding-bottom:12px;">
               <p style="font-size:14px;font-weight:600;color:#374151;margin-bottom:4px;">Q: 記録データはどこに保存されますか？</p>
               <p style="font-size:13px;color:#6b7280;line-height:1.7;">A: ご使用のブラウザのローカルストレージに保存されます。他のデバイスとは共有されません。</p>
@@ -222,15 +425,12 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
               <p style="font-size:14px;font-weight:600;color:#374151;margin-bottom:4px;">Q: 記録を削除するにはどうすればいいですか？</p>
               <p style="font-size:13px;color:#6b7280;line-height:1.7;">A: リセットボタン、またはブラウザのサイトデータをクリアすることで削除できます。</p>
             </div>
-            <div style="border-bottom:1px solid #f1f5f9;padding-bottom:12px;">
-              <p style="font-size:14px;font-weight:600;color:#374151;margin-bottom:4px;">Q: スマートフォンで利用できますか？</p>
-              <p style="font-size:13px;color:#6b7280;line-height:1.7;">A: はい、スマートフォン・タブレット・PCすべてでご利用いただけます。</p>
-            </div>
+            
             </div>
         </div>
 
         <!-- SNSシェアCTA -->
-        <div class="card" style="margin-top:8px;text-align:center;background:linear-gradient(135deg,#DBEAFE,#EFF6FF);" role="complementary" aria-label="SNSシェア">
+        <div class="card" style="margin-top:8px;text-align:center;background:#f0f9ff;" role="complementary" aria-label="SNSシェア">
             <p style="font-size:13px;font-weight:600;color:#374151;margin-bottom:10px;">📣 友人・家族にシェアする</p>
             <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;">
                 <a href="https://twitter.com/intent/tweet?text=%E6%97%85%E8%A1%8C%E4%BA%88%E7%AE%97%E7%AE%A1%E7%90%86%E3%83%84%E3%83%BC%E3%83%AB%20%23無料ツール&url=https%3A%2F%2Fappadaycreator.com%2Ftravel-budget-tracker%2F" target="_blank" rel="noopener" aria-label="旅行予算管理ツールをXでシェア" style="background:#1DA1F2;color:white;padding:8px 16px;border-radius:8px;font-size:13px;text-decoration:none;font-weight:600;min-height:44px;display:inline-flex;align-items:center;">𝕏 シェア</a>
@@ -239,12 +439,90 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
         </div>
 
         <!-- 免責事項 -->
-        <div style="background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:12px;margin:8px 0;font-size:12px;color:#92400e;">
-            <strong>⚠️ 免責事項</strong>：本ツールの計算・診断結果はあくまで参考情報です。医療・法律・税務・投資等の専門的判断が必要な場合は、必ず資格を持つ専門家にご相談ください。本サービスの利用により生じた損害について、当サービスは一切の責任を負いません。
-        </div>
-    </main>
-
+        <p style="font-size:11px;color:#92400e;margin:6px 0">⚠️ 本ツールの結果は参考情報です。専門的判断は資格を持つ専門家にご相談ください。</p>
     
+<div style="background:#f8faff;border:1px solid #e0e7ff;border-radius:.75rem;padding:1.25rem 1.5rem;margin:1.5rem auto;max-width:740px">
+  <p style="font-weight:700;font-size:.9rem;margin:0 0 .75rem;color:#3730a3">📋 このツールの詳細</p>
+  <p style="font-size:.875rem;color:#374151;line-height:1.8;margin:0 0 .5rem">本記録ツールは、旅行予算管理ツール記録・管理アプリを手軽に利用できる無料Webサービスです。登録不要でブラウザから直接ご利用いただけます。</p>
+</div>
+<section aria-labelledby="faq-h" class="bg-white rounded-2xl shadow-md p-4 mb-4" style="max-width:740px;margin-left:auto;margin-right:auto">
+  <h2 id="faq-h" style="font-size:1.05rem;font-weight:700;margin-bottom:12px;border-left:4px solid #4f46e5;padding-left:10px;">よくある質問</h2>
+  <dl style="line-height:1.8;">
+    <dt style="font-weight:600;margin-top:12px;">Q: 記録したデータはどこに保存されますか？</dt>
+    <dd style="margin-left:16px;color:#374151;">データはお使いのブラウザのローカルストレージに保存されます。外部サーバーへの送信は行いません。</dd>
+    <dt style="font-weight:600;margin-top:12px;">Q: 過去のデータを一覧で確認できますか？</dt>
+    <dd style="margin-left:16px;color:#374151;">はい、記録した旅行予算管理ツール記録・管理アプリの履歴を時系列で確認できます。継続的に記録することで変化や傾向をつかめます。</dd>
+    <dt style="font-weight:600;margin-top:12px;">Q: データを削除したい場合はどうすればいいですか？</dt>
+    <dd style="margin-left:16px;color:#374151;">アプリ内の削除機能、またはブラウザのローカルストレージをクリアすることで削除できます。</dd>
+  </dl>
+</section>
+
+<div style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:10px;padding:1.25rem 1.5rem;margin:2rem 0">
+  <p style="font-weight:800;color:#3730a3;margin:0 0 .75rem;font-size:.9rem">📖 このツールに関連するコラム</p>
+  <ul style="margin:0;padding-left:1.25rem;line-height:2;font-size:.9rem">
+<li><a href="/blog/household-budget-guide/" style="color:#4f46e5">家計管理・支出管理</a></li>
+  </ul>
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 18px;margin:20px 0" id="related-blog">
+  <p style="font-weight:800;font-size:.9rem;color:#1e293b;margin:0 0 10px">📚 関連コラム</p>
+  <ul style="margin:0;padding-left:0;list-style:none"><li style="margin:0 0 6px"><a href="/blog/nisa-ideco-hikaku/" style="color:#4f46e5;font-size:.88rem;text-decoration:none;">📖 NISAとiDeCoを徹底比較</a></li><li style="margin:0 0 6px"><a href="/blog/rogo-2000man-guide/" style="color:#4f46e5;font-size:.88rem;text-decoration:none;">📖 老後2,000万円問題の解決策</a></li><li style="margin:0 0 6px"><a href="/blog/iryohi-koujo-guide/" style="color:#4f46e5;font-size:.88rem;text-decoration:none;">📖 医療費控除の申請ガイド</a></li></ul>
+</div>
+</div>
+
+<div style="background:#fff;border:1px solid #d1fae5;border-radius:12px;padding:1.5rem;margin:2rem 0">
+  <p style="font-weight:800;color:#065f46;margin:0 0 1rem;font-size:.9rem">💡 このツールの活用事例</p>
+    <div style="background:#f9fafb;border-radius:8px;padding:1rem;margin-bottom:.75rem">
+      <p style="font-weight:700;color:#1f2937;margin:0 0 .3rem;font-size:.88rem">事例1：松本さん（旅行中・使いすぎを防ぎたい）</p>
+      <p style="color:#4b5563;margin:0 0 .25rem;font-size:.84rem">➡ 旅行予算15万円を入力してリアルタイム管理</p>
+      <p style="color:#15803d;margin:0;font-size:.84rem;font-weight:600">✅ 3日目で予算の60%消費を確認。残り宿泊費を節約するためプランを見直し</p>
+    </div>    <div style="background:#f9fafb;border-radius:8px;padding:1rem;margin-bottom:.75rem">
+      <p style="font-weight:700;color:#1f2937;margin:0 0 .3rem;font-size:.88rem">事例2：橋本さん（バックパッカー・長期旅行の収支管理）</p>
+      <p style="color:#4b5563;margin:0 0 .25rem;font-size:.84rem">➡ 1ヶ月分の旅行収支を記録・分析</p>
+      <p style="color:#15803d;margin:0;font-size:.84rem;font-weight:600">✅ 食費が予算の40%超と判明。現地スーパー活用とレストラン頻度削減で月3万円節約</p>
+    </div>    <div style="background:#f9fafb;border-radius:8px;padding:1rem;margin-bottom:.75rem">
+      <p style="font-weight:700;color:#1f2937;margin:0 0 .3rem;font-size:.88rem">事例3：吉村さん（仕事の出張費・経費精算の記録）</p>
+      <p style="color:#4b5563;margin:0 0 .25rem;font-size:.84rem">➡ 出張費の自動記録と経費精算レポート作成</p>
+      <p style="color:#15803d;margin:0;font-size:.84rem;font-weight:600">✅ 領収書なしで申請できない費用が判明。カード明細連携で経費漏れゼロを実現</p>
+    </div></div>
+</main>
+
+    <!-- ===== FEATURES ===== -->
+    <section class="tbt-sec" id="tbt-features">
+      <h2 class="tbt-sec-h">便利な機能で、もっと快適な旅行管理<span class="tbt-abar"></span></h2>
+      <p class="tbt-sec-sub">記録から分析まで、旅のお金まわりをまるごとサポートする6つの機能。</p>
+      <div class="tbt-g3">
+        <div class="tbt-fcard"><div class="tbt-fic"><img src="assets/icons/split/02-01.png" alt=""></div><h3>多通貨対応・自動換算</h3><p>海外通貨を入力すると日本円に自動換算。国内・海外どちらの旅行にも対応します。</p></div>
+        <div class="tbt-fcard"><div class="tbt-fic"><img src="assets/icons/split/02-02.png" alt=""></div><h3>複数日への柔軟な記録</h3><p>日付ごとに支出を配分し、1日単位でも旅程全体でも管理。長期旅行にもぴったり。</p></div>
+        <div class="tbt-fcard"><div class="tbt-fic"><img src="assets/icons/split/03-08.png" alt=""></div><h3>カテゴリ別グラフ分析</h3><p>交通・宿泊・食事・観光の内訳をドーナツグラフで見える化。使いすぎをすぐ把握。</p></div>
+        <div class="tbt-fcard"><div class="tbt-fic"><img src="assets/icons/split/02-06.png" alt=""></div><h3>共同編集・複数人シェア</h3><p>家族や友人と予算を共有。みんなで記録すれば入力の手間も半分になります。</p></div>
+        <div class="tbt-fcard"><div class="tbt-fic"><img src="assets/icons/split/02-05.png" alt=""></div><h3>グループ分割・割り勘</h3><p>誰がいくら払ったかを集計し、面倒な割り勘もスッキリ精算できます。</p></div>
+        <div class="tbt-fcard"><div class="tbt-fic"><img src="assets/icons/split/04-02.png" alt=""></div><h3>AI予算最適化アドバイス</h3><p>支出傾向をAIが分析し、節約のヒントを提案。旅程プランとの連携もスムーズ。</p></div>
+      </div>
+    </section>
+
+    <!-- ===== 3 STEPS ===== -->
+    <section style="background:linear-gradient(180deg,#eaf5fc,#f3f9fd);">
+      <div class="tbt-sec" id="tbt-how">
+        <h2 class="tbt-sec-h">旅行の流れに合わせて、3ステップ<span class="tbt-abar"></span></h2>
+        <p class="tbt-sec-sub">むずかしい設定は不要。3つのステップで旅のお金が見える化されます。</p>
+        <div class="tbt-g3">
+          <div class="tbt-scard"><div class="tbt-snum">1</div><div class="ph" style="background-image:url('assets/photos/photo_02.jpg')"></div><div class="b"><h3>予算・計画を決める</h3><p>カテゴリごとに予算を設定。旅行前の計画づくりにも使えます。</p></div></div>
+          <div class="tbt-scard"><div class="tbt-snum">2</div><div class="ph" style="background-image:url('assets/photos/photo_03.jpg')"></div><div class="b"><h3>旅行中に支出を記録</h3><p>使ったその場でサッと入力。予算との差分をリアルタイムで確認。</p></div></div>
+          <div class="tbt-scard"><div class="tbt-snum">3</div><div class="ph" style="background-image:url('assets/photos/photo_04.jpg')"></div><div class="b"><h3>結果を振り返る</h3><p>グラフで支出を見える化。CSV出力やシェアで仲間との精算もかんたん。</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA BAND ===== -->
+    <section class="tbt-cta">
+      <div class="tbt-cta-bg" style="background-image:url('assets/photos/photo_05.jpg')"></div>
+      <div class="tbt-cta-in">
+        <h2>今すぐ無料で旅行予算を管理しよう</h2>
+        <p>登録不要・完全無料。旅の支出記録を今すぐ始められます。</p>
+        <a href="#entry-category" class="tbt-bp" onclick="document.getElementById('entry-category').focus()">予算を作成する</a>
+      </div>
+    </section>
+
+
 <script>
     const BTN_COLOR = '#2563EB';
     const STORAGE_KEY = 'travel-budget-tracker-entries';
@@ -378,37 +656,215 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
         ${budgetRow}
         <div style="margin-top:8px;font-size:12px;color:#999;">記録件数: ${entries.length}件</div>
       `;
+      initChart();
+      updateExportButtons();
+    }
+
+    // グラフ初期化・描画
+    let chartInstance = null;
+    function initChart() {
+      const cats = {};
+      entries.forEach(e => {
+        cats[e.category] = (cats[e.category] || 0) + e.amount;
+      });
+
+      const catNames = Object.keys(cats).sort((a,b) => cats[b] - cats[a]);
+      const catData = catNames.map(k => cats[k]);
+      const catLabels = catNames.map(k => CAT_LABELS[k] || k);
+      const catColors = {
+        transport: '#DBEAFE',
+        hotel: '#FEF9C3',
+        food: '#DCFCE7',
+        sightseeing: '#FCE7F3',
+        other: '#F3F4F6'
+      };
+      const chartColors = catNames.map(k => catColors[k] || '#E5E7EB');
+
+      const ctx = document.getElementById('budgetChart')?.getContext('2d');
+      if (!ctx) return;
+
+      if (chartInstance) chartInstance.destroy();
+
+      chartInstance = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: catLabels,
+          datasets: [{
+            data: catData,
+            backgroundColor: chartColors,
+            borderColor: '#fff',
+            borderWidth: 2
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: true,
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: {
+                font: { size: 12, family: "'Inter', 'Noto Sans JP', sans-serif" },
+                padding: 12,
+                usePointStyle: true,
+                pointStyle: 'circle'
+              }
+            }
+          }
+        }
+      });
+    }
+
+    // エクスポートボタンの有効/無効
+    function updateExportButtons() {
+      const btn = document.getElementById('exportCsvBtn');
+      if (btn) {
+        btn.disabled = entries.length === 0;
+      }
+    }
+
+    // 印刷機能
+    function printResult() {
+      window.print();
+    }
+
+    // CSVエクスポート機能
+    function exportCSV() {
+      if (entries.length === 0) {
+        showToast('記録がありません');
+        return;
+      }
+
+      const now = new Date();
+      const dateStr = now.toISOString().split('T')[0];
+      const filename = `travel-budget-${dateStr}.csv`;
+
+      const header = '日付,カテゴリ,内容,金額,予算\n';
+      const rows = entries.map(e =>
+        `${e.date},${CAT_LABELS[e.category] || e.category},${e.desc},${e.amount},${e.budget || ''}`
+      ).join('\n');
+
+      const csv = header + rows;
+      const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = filename;
+      link.click();
+
+      showToast('CSVをダウンロードしました');
+    }
+
+    // テキストコピー機能
+    function copyToClipboard() {
+      if (entries.length === 0) {
+        showToast('記録がありません');
+        return;
+      }
+
+      const total = entries.reduce((s, e) => s + e.amount, 0);
+      const cats = {};
+      entries.forEach(e => {
+        cats[e.category] = (cats[e.category] || 0) + e.amount;
+      });
+
+      let text = `旅行予算管理ツール - 支出結果\n\n合計支出: ¥${total.toLocaleString()}\n\n`;
+      text += `カテゴリ別:\n`;
+      Object.entries(cats).sort((a,b) => b[1]-a[1]).forEach(([k,v]) => {
+        text += `${CAT_LABELS[k] || k}: ¥${v.toLocaleString()}\n`;
+      });
+
+      navigator.clipboard.writeText(text).then(() => {
+        showToast('結果をコピーしました');
+      }).catch(() => {
+        showToast('コピーに失敗しました');
+      });
+    }
+
+    // トースト表示（自動消去）
+    function showToast(message) {
+      const toast = document.createElement('div');
+      toast.className = 'toast';
+      toast.textContent = message;
+      document.body.appendChild(toast);
+      setTimeout(() => toast.remove(), 2000);
     }
     </script>
 
-    <!-- Amazon アフィリエイト -->
-    <div style="background:#f0fdf4;border:1px solid #86efac;border-radius:10px;padding:14px;margin:16px auto;max-width:500px;text-align:center;">
-      <p style="font-size:0.78em;color:#15803d;font-weight:bold;margin-bottom:8px;">📚 関連書籍・グッズをAmazonでチェック</p>
-      <a href="https://www.amazon.co.jp/s?k=旅行予算管理ツー+本+おすすめ&tag=appadaycrea0f-22" target="_blank" rel="noopener noreferrer" class="js-track-affiliate" data-platform="Amazon" data-item-name="旅行予算管理ツー 関連書籍" data-link-type="affiliate_link" style="display:inline-block;background:#ff9900;color:#fff;padding:9px 20px;border-radius:8px;font-size:0.85em;font-weight:bold;text-decoration:none;margin:4px;">🛒 旅行予算管理ツー 関連書籍</a>
-      <a href="https://www.amazon.co.jp/s?k=旅行予算管理ツー+入門+書籍&tag=appadaycrea0f-22" target="_blank" rel="noopener noreferrer" class="js-track-affiliate" data-platform="Amazon" data-item-name="旅行予算管理ツー 入門ガイド" data-link-type="affiliate_link" style="display:inline-block;background:#ff9900;color:#fff;padding:9px 20px;border-radius:8px;font-size:0.85em;font-weight:bold;text-decoration:none;margin:4px;">🛒 旅行予算管理ツー 入門ガイド</a>
-    </div>
-    <!-- rakuten-affiliate-block -->
-    <div style="border:1px solid #BF0000;background:#fff9f9;border-radius:10px;padding:14px;margin:12px auto;max-width:480px;text-align:center;">
-      <p style="font-size:0.85rem;color:#4b5563;margin-bottom:8px;">🛒 関連商品を楽天市場で探す</p>
-      <a href="https://hb.afl.rakuten.co.jp/ichiba/541ad0d2.ce2bed12.541ad0d3.a1a2318c/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E6%2597%2585%25E8%25A1%258C%2520%25E7%25AF%2580%25E7%25B4%2584%2520%25E3%2582%25AC%25E3%2582%25A4%25E3%2583%2589%2F&link_type=text" target="_blank" rel="nofollow sponsored noopener"
-         style="display:inline-block;background:#BF0000;color:white;padding:10px 24px;border-radius:8px;font-weight:bold;font-size:14px;text-decoration:none;">
-        楽天市場で「旅行 節約 ガイド」を検索 →
-      </a>
-    </div>
-    <!-- /rakuten-affiliate-block -->
+    <!-- r31-use-cases -->
+<div style="margin:1.5rem auto;max-width:760px;padding:0 1rem">
+<h2 style="font-size:1.125rem;font-weight:700;margin:0 0 1rem;color:#1e293b;border-left:4px solid #4f46e5;padding-left:10px">こんな方・シーンで役立ちます</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.75rem">
+<div style="padding:1rem;background:#f8fafc;border:1px solid #e2e8f0;border-radius:.75rem">
+<div style="font-size:1.5rem;margin-bottom:.4rem">📱</div>
+<div style="font-weight:700;font-size:.9rem;color:#1e293b;margin-bottom:.4rem">スキマ時間にサッと調べたい方</div>
+<div style="font-size:.85rem;color:#64748b;line-height:1.7">買い物・外出前・計画を立てるときに手軽に確認したい方に。直感的な操作で必要な情報をすぐに確認できます。</div>
+</div>
+<div style="padding:1rem;background:#f8fafc;border:1px solid #e2e8f0;border-radius:.75rem">
+<div style="font-size:1.5rem;margin-bottom:.4rem">🔄</div>
+<div style="font-weight:700;font-size:.9rem;color:#1e293b;margin-bottom:.4rem">複数の選択肢を比較したい方</div>
+<div style="font-size:.85rem;color:#64748b;line-height:1.7">条件を変えながら何度でも試算して、より自分に合った選択をしたい方に。数字で根拠を持って判断できます。</div>
+</div>
+<div style="padding:1rem;background:#f8fafc;border:1px solid #e2e8f0;border-radius:.75rem">
+<div style="font-size:1.5rem;margin-bottom:.4rem">💡</div>
+<div style="font-weight:700;font-size:.9rem;color:#1e293b;margin-bottom:.4rem">コスト感覚を身につけたい方</div>
+<div style="font-size:.85rem;color:#64748b;line-height:1.7">日常の出費がどれくらいかかるかを具体的な数字で把握して、メリハリのある賢いお金の使い方を実現したい方に。</div>
+</div>
+</div>
+</div>
+<!-- r31-extended-faq -->
+<div style="margin:1.5rem auto;max-width:760px;padding:0 1rem">
+<div style="background:white;border-radius:16px;padding:1.5rem;box-shadow:0 4px 20px rgba(0,0,0,.08)">
+<h2 style="font-size:1.05rem;font-weight:700;margin:0 0 1rem;border-left:4px solid #4f46e5;padding-left:10px;color:#1e293b">よくある質問（詳細）</h2>
 
+
+
+
+
+</div>
+</div>
+<!-- r31-tool-notice -->
+<div style="margin:1.5rem auto;max-width:760px;padding:0 1rem">
+<div style="padding:1.25rem 1.5rem;background:#fef3c7;border:1px solid #fbbf24;border-radius:.75rem">
+<h3 style="font-size:1rem;font-weight:700;margin:0 0 .75rem;color:#92400e">⚠️ ご利用時の注意事項</h3>
+<ul style="margin:0;padding-left:1.25rem;font-size:.88rem;color:#78350f;line-height:2">
+<li style='margin-bottom:.4rem'>本ツールの計算結果はあくまで参考値です。実際の金額は個人の条件・契約内容により異なります</li>
+<li style='margin-bottom:.4rem'>税務・確定申告・法律に関する判断は税理士・公認会計士・弁護士等の専門家にご相談ください</li>
+<li style='margin-bottom:.4rem'>金融商品への投資は元本割れのリスクがあります。投資判断はご自身の責任のもとで行ってください</li>
+<li style='margin-bottom:.4rem'>制度・税率・補助金は改正される場合があります。最新情報は国税庁・各省庁の公式サイトでご確認ください</li>
+<li style='margin-bottom:.4rem'>シミュレーション結果は将来の成果を保証するものではありません</li>
+</ul>
+</div>
+</div>
+<!-- r31-tool-references -->
+<div style="margin:1.5rem auto;max-width:760px;padding:0 1rem">
+<div style="padding:1.25rem 1.5rem;background:#f8fafc;border:1px solid #e2e8f0;border-radius:.75rem">
+<h3 style="font-size:1rem;font-weight:700;margin:0 0 .75rem;color:#1e293b">📚 関連する公的情報・参考リンク</h3>
+<ul style="margin:0;padding-left:1.25rem;font-size:.88rem;color:#374151;line-height:1.9">
+<li style='margin-bottom:.5rem'><a href="https://www.nta.go.jp/" target="_blank" rel="noopener noreferrer" style="color:#4f46e5">国税庁 公式サイト</a> — 確定申告・税率・控除制度の最新情報。e-Taxを使った電子申告の手順も掲載</li>
+<li style='margin-bottom:.5rem'><a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/nenkin/" target="_blank" rel="noopener noreferrer" style="color:#4f46e5">厚生労働省 年金・社会保険</a> — 公的年金・雇用保険・健康保険の仕組みと給付内容</li>
+<li style='margin-bottom:.5rem'><a href="https://www.fsa.go.jp/policy/nisa2/about/index.html" target="_blank" rel="noopener noreferrer" style="color:#4f46e5">金融庁 NISA・iDeCo制度</a> — 新NISAの非課税枠・iDeCoの掛金上限などの公式解説</li>
+<li style='margin-bottom:.5rem'><a href="https://www.fpkk.or.jp/" target="_blank" rel="noopener noreferrer" style="color:#4f46e5">日本FP協会</a> — ファイナンシャルプランニングの基礎知識・無料相談窓口</li>
+</ul>
+</div>
+</div>
+<!-- r31-tool-about -->
+<div style="margin:1.5rem auto;max-width:760px;padding:0 1rem">
+<div style="padding:1.25rem 1.5rem;background:#f0f9ff;border:1px solid #bae6fd;border-radius:.75rem">
+<h3 style="font-size:1rem;font-weight:700;margin:0 0 .75rem;color:#0c4a6e">ℹ️ このツールについて</h3>
+<p style="margin:0;font-size:.88rem;color:#0c4a6e;line-height:1.9">「旅行予算管理ツール」はAppADayCreatorが提供する無料Webツールです。お金・家計に関する情報を素早く手軽に確認できます。会員登録・アプリインストール不要で、ブラウザからすぐにご利用いただけます。すべての処理はブラウザ内で完結するため、入力した情報が外部サーバーに送信されることはなく、プライバシーも保護されます。AppADayCreatorでは、日常生活のあらゆるシーンで役立つWebツールを400本以上無料で提供しています。金融・健康・育児・キャリア・旅行など幅広いカテゴリのツールをご活用ください。</p>
+</div>
+</div>
+<!-- r31-extra-guide -->
+<div style="margin:1.5rem auto;max-width:760px;padding:0 1rem">
+<div style="background:white;border-radius:16px;padding:1.5rem;box-shadow:0 4px 20px rgba(0,0,0,.06)">
+<h3 style="font-size:.95rem;font-weight:700;margin:1.25rem 0 .6rem;color:#1e293b">関連ツールのご紹介</h3>
+
+</div>
+</div>
 <div style="border-top:1px solid #e5e7eb;padding:14px 16px 18px;background:#fff;">
   <p style="text-align:center;font-size:11px;font-weight:600;color:#94a3b8;margin:0 0 10px;">スポンサーリンク</p>
   <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;max-width:700px;margin:0 auto;">
-    <a href="https://px.a8.net/svt/ejp?a8mat=4B3WJ6+FIIWRU+1IRY+1TKOKI" rel="nofollow noopener noreferrer" target="_blank" style="display:inline-block;padding:5px 12px;background:#fff;border:1px solid #d1d5db;border-radius:20px;font-size:12px;color:#4b5563;text-decoration:none;white-space:nowrap;">ファイナンシャルアカデミー「お金の教養講座」</a><img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4B3WJ6+FIIWRU+1IRY+1TKOKI" alt="">
-    <a href="https://px.a8.net/svt/ejp?a8mat=4B3WJ5+C2OQY2+14CS+68EPE" rel="nofollow noopener noreferrer" target="_blank" style="display:inline-block;padding:5px 12px;background:#fff;border:1px solid #d1d5db;border-radius:20px;font-size:12px;color:#4b5563;text-decoration:none;white-space:nowrap;">【じゃらん】国内25,000軒の宿をネットで予約OK！2％ポイント還元！</a><img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=4B3WJ5+C2OQY2+14CS+68EPE" alt="">
-    <a href="https://px.a8.net/svt/ejp?a8mat=4B3WJ6+FQ9JMY+1LP8+BY642" rel="nofollow noopener noreferrer" target="_blank" style="display:inline-block;padding:5px 12px;background:#fff;border:1px solid #d1d5db;border-radius:20px;font-size:12px;color:#4b5563;text-decoration:none;white-space:nowrap;">日々の生活にハッピーをプラス！《ハピタス》</a><img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4B3WJ6+FQ9JMY+1LP8+BY642" alt="">
+    <a href="https://px.a8.net/svt/ejp?a8mat=4B3WJ6+FIIWRU+1IRY+1TKOKI" rel="nofollow noopener noreferrer" target="_blank" style="display:inline-block;padding:5px 12px;background:#fff;border:1px solid #d1d5db;border-radius:20px;font-size:12px;color:#4b5563;text-decoration:none;white-space:nowrap;">ファイナンシャルアカデミー「お金の教養講座」</a><img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4B3WJ6+FIIWRU+1IRY+1TKOKI" alt="">
     <a href="https://px.a8.net/svt/ejp?a8mat=4B3WJ8+4KDYAY+4JGQ+1NQUK2" rel="nofollow noopener noreferrer" target="_blank" style="display:inline-block;padding:5px 12px;background:#fff;border:1px solid #d1d5db;border-radius:20px;font-size:12px;color:#4b5563;text-decoration:none;white-space:nowrap;">マネーフォワード クラウド開業届</a><img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4B3WJ8+4KDYAY+4JGQ+1NQUK2" alt="">
-    <a href="https://px.a8.net/svt/ejp?a8mat=4B3VR6+BVJJOQ+3SPO+9FL80Y" rel="nofollow noopener noreferrer" target="_blank" style="display:inline-block;padding:5px 12px;background:#fff;border:1px solid #d1d5db;border-radius:20px;font-size:12px;color:#4b5563;text-decoration:none;white-space:nowrap;">クラウド会計ソフト【freee会計】無料から</a><img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=4B3VR6+BVJJOQ+3SPO+9FL80Y" alt="">
-    <a href="https://px.a8.net/svt/ejp?a8mat=4B3VR6+GFV6NE+3CJQ+64C3M" rel="nofollow noopener noreferrer" target="_blank" style="display:inline-block;padding:5px 12px;background:#fff;border:1px solid #d1d5db;border-radius:20px;font-size:12px;color:#4b5563;text-decoration:none;white-space:nowrap;">本・雑誌・ビジネス書が聴ける【audiobook.jp】</a><img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=4B3VR6+GFV6NE+3CJQ+64C3M" alt="">
-    <a href="https://px.a8.net/svt/ejp?a8mat=4B3WJ6+39Y54A+5F3W+5YJRM" rel="nofollow noopener noreferrer" target="_blank" style="display:inline-block;padding:5px 12px;background:#fff;border:1px solid #d1d5db;border-radius:20px;font-size:12px;color:#4b5563;text-decoration:none;white-space:nowrap;">アマゾンKindle電子書籍・ペーパーバック出版代行【パブフル】</a><img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4B3WJ6+39Y54A+5F3W+5YJRM" alt="">
-    <a href="https://px.a8.net/svt/ejp?a8mat=4B3WJ6+36YZ3E+3A66+5YRHE" rel="nofollow noopener noreferrer" target="_blank" style="display:inline-block;padding:5px 12px;background:#fff;border:1px solid #d1d5db;border-radius:20px;font-size:12px;color:#4b5563;text-decoration:none;white-space:nowrap;">【販売本数No.1】ウイルスバスター</a><img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4B3WJ6+36YZ3E+3A66+5YRHE" alt="">
-    <a href="https://px.a8.net/svt/ejp?a8mat=4B3WJ7+C3A6JU+4Z92+65ME9" rel="nofollow noopener noreferrer" target="_blank" style="display:inline-block;padding:5px 12px;background:#fff;border:1px solid #d1d5db;border-radius:20px;font-size:12px;color:#4b5563;text-decoration:none;white-space:nowrap;">【求人数No.1】リゾートバイト・日本を楽しもう【ダイブ】</a><img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=4B3WJ7+C3A6JU+4Z92+65ME9" alt="">
   </div>
 </div>
 <footer style="text-align:center;padding:20px;color:white;font-size:12px;background:#374151;margin-top:8px;">
@@ -418,6 +874,88 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
         | <a href="contact.html" style="color:white;">お問い合わせ</a></p>
         <p style="margin-top:4px;font-size:11px;opacity:0.6;">最終更新: 2026年5月 | 本サービスはアフィリエイト広告を掲載しています（A8.net/Amazon）</p>
         <p style="margin-top:6px;">© 2026 AppADayCreator. All services are free.</p>
-    </footer>
+    <div style="background:linear-gradient(135deg,#1e3a5f,#2563eb);padding:16px 12px;text-align:center;margin-top:12px;">
+  <p style="color:#e0e7ff;font-size:12px;font-weight:600;margin:0 0 4px;">運営：AppADayCreator / Tech&amp;Brace</p>
+  <p style="color:#cbd5e1;font-size:11px;margin:0 0 10px;">マネー・健康・育児・キャリアなど日常に役立つ無料Webサービスを提供。IT・業務効率化のご相談はこちら。</p>
+  <a href="https://tech-and-brace.com/ai-automation?utm_source=appadaycreator&utm_medium=footer&utm_campaign=b2b_cta" target="_blank" rel="noopener" onclick="if(typeof gtag==='function'){gtag('event','b2b_cta_click',{source_page:window.location.pathname,cta_position:'footer',tool_category:document.querySelector('[aria-label=\"パンくずリスト\"] li:nth-child(3) a')?document.querySelector('[aria-label=\"パンくずリスト\"] li:nth-child(3) a').innerText:'general',destination:'https://tech-and-brace.com/ai-automation'})}" style="display:inline-block;background:#fff;color:#1e3a5f;font-size:11px;font-weight:700;padding:6px 16px;border-radius:20px;text-decoration:none;">法人・B2B相談はこちら →</a>
+</div>
+</footer>
+<div style="text-align:center;padding:10px 16px 14px;background:#eef2ff;border-top:2px solid #c7d2fe;margin-top:8px">
+<a href="/blog/" style="color:#4f46e5;font-size:.85rem;font-weight:700">📖 マネー・育児・キャリアのコラムを読む →</a>
+</div>
+<div style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:.5rem;padding:1rem 1.25rem;margin:1.5rem auto;max-width:760px;font-size:.875rem">
+<p style="margin:0 0 .5rem;font-weight:700;color:#3730a3">📖 お役立ちコラム</p>
+<ul style="margin:0;padding-left:1.25rem;color:#4f46e5;line-height:2">
+<li><a href="/blog/stock-investment-beginner/" style="color:#4f46e5">株式投資の始め方【初心者完全ガイド】</a></li>
+<li><a href="/blog/nisa-comparison/" style="color:#4f46e5">新NISA vs iDeCo 徹底比較</a></li>
+<li><a href="/blog/investment-risk-management/" style="color:#4f46e5">投資のリスク管理入門</a></li>
+</ul>
+</div>
+<!-- r17-mobile-ux -->
+<a href="#top" id="back-to-top" aria-label="ページトップへ戻る" style="display:none;position:fixed;bottom:24px;right:20px;background:#4f46e5;color:#fff;border:none;border-radius:50%;width:48px;height:48px;font-size:1.4rem;line-height:48px;text-align:center;text-decoration:none;box-shadow:0 4px 12px rgba(79,70,229,.4);z-index:9000;cursor:pointer" title="ページトップへ">↑</a>
+<script>
+(function(){
+  var btn = document.getElementById('back-to-top');
+  if(!btn) return;
+  window.addEventListener('scroll', function(){
+    btn.style.display = window.scrollY > 400 ? 'block' : 'none';
+  }, {passive:true});
+})();
+</script>
+<!-- r52-travel-budget-guide -->
+<div style="background:#f0fdf4;border:2px solid #86efac;border-radius:14px;padding:1.5rem;margin:1.5rem auto;max-width:728px" id="travel-budget-knowledge-guide">
+  <h2 style="font-size:1.125rem;font-weight:800;color:#065f46;margin:0 0 .5rem">旅行予算管理の基礎知識ガイド</h2>
+  <p style="font-size:.75rem;color:#9ca3af;margin:0 0 1rem">最終更新: 2026年6月</p>
+  <div style="font-size:.9rem;color:#374151;line-height:1.8">
+    <h3 style="font-size:1rem;font-weight:700;color:#065f46;margin:.75rem 0 .4rem">旅行費用の主な内訳と目安</h3>
+    <table style="width:100%;border-collapse:collapse;font-size:.85rem;margin:.75rem 0">
+      <tr style="background:#d1fae5"><th style="padding:.5rem .75rem;border:1px solid #6ee7b7;text-align:left">費用項目</th><th style="padding:.5rem .75rem;border:1px solid #6ee7b7">国内1泊2日（2人）目安</th><th style="padding:.5rem .75rem;border:1px solid #6ee7b7">節約のコツ</th></tr>
+      <tr><td style="padding:.5rem .75rem;border:1px solid #d1fae5">交通費</td><td style="padding:.5rem .75rem;border:1px solid #d1fae5;text-align:center">1〜3万円</td><td style="padding:.5rem .75rem;border:1px solid #d1fae5">早割・ダイナミックパッケージ</td></tr>
+      <tr style="background:#ecfdf5"><td style="padding:.5rem .75rem;border:1px solid #d1fae5">宿泊費</td><td style="padding:.5rem .75rem;border:1px solid #d1fae5;text-align:center">1〜4万円</td><td style="padding:.5rem .75rem;border:1px solid #d1fae5">平日・オフシーズン利用</td></tr>
+      <tr><td style="padding:.5rem .75rem;border:1px solid #d1fae5">食費</td><td style="padding:.5rem .75rem;border:1px solid #d1fae5;text-align:center">0.5〜1.5万円</td><td style="padding:.5rem .75rem;border:1px solid #d1fae5">地元の食堂・スーパー活用</td></tr>
+      <tr style="background:#ecfdf5"><td style="padding:.5rem .75rem;border:1px solid #d1fae5">観光・体験</td><td style="padding:.5rem .75rem;border:1px solid #d1fae5;text-align:center">0.5〜2万円</td><td style="padding:.5rem .75rem;border:1px solid #d1fae5">無料スポット・割引券を活用</td></tr>
+    </table>
+    <h3 style="font-size:1rem;font-weight:700;color:#065f46;margin:.75rem 0 .4rem">旅行予算管理のポイント</h3>
+    <ul style="margin:.5rem 0;padding-left:1.25rem">
+      <li>旅行前に予算の上限を設定し、費用項目ごとに枠を決める</li>
+      <li>現地での予備費として全体の10〜15%を確保しておく</li>
+      <li>キャッシュレス（クレジットカード・電子マネー）を活用して支出を記録しやすくする</li>
+      <li>帰宅後に実際の支出を記録し、次の旅行計画の参考にする</li>
+    </ul>
+    <h3 style="font-size:1rem;font-weight:700;color:#065f46;margin:.75rem 0 .4rem">参考情報</h3>
+    <p style="font-size:.85rem">国土交通省観光庁「旅行統計」・消費者庁「旅行サービスに関する注意事項」も参考になります。</p>
+  </div>
+  <details style="margin-top:1rem">
+    <summary style="font-size:.9375rem;font-weight:700;color:#065f46;cursor:pointer;padding:.5rem 0">よくある質問（FAQ）</summary>
+    <div style="padding:.75rem 0 0;font-size:.9375rem;color:#374151;line-height:1.8">
+      <p style="margin-top:.75rem"><strong>Q. 旅行費用はどのくらいの割合で何に使うべきですか？</strong></p>
+      <p>A. 一般的な国内旅行の費用内訳の目安は、交通費30〜40%・宿泊費30〜40%・食費15〜20%・観光・体験費10〜15%程度です。重視したいものに予算を集中させ、他の項目で節約するというメリハリのある配分が、旅行の満足度を高めるコツです。</p>
+      <p style="margin-top:.75rem"><strong>Q. 旅行をよりお得に楽しむためのキャンペーンや割引を探す方法は？</strong></p>
+      <p>A. 各都道府県が実施する旅行支援事業・じゃらん・楽天トラベル等のセール・航空会社のマイルプログラム・JRのおトクなきっぷなどを活用することで旅行費を大幅に抑えられる場合があります。観光庁や自治体の公式サイトで最新のキャンペーン情報を定期的に確認することをおすすめします。</p>
+      <p style="margin-top:.75rem"><strong>Q. 旅行費用を事前に積み立てる方法はありますか？</strong></p>
+      <p>A. 旅行専用の口座を作り、月々一定額を自動振替で積み立てる方法が効果的です。例えば年1回・20万円の旅行を目標とする場合、月に約1.7万円の積み立てが目安です。銀行の定期預金・財形貯蓄・旅行会社の積立サービス等を活用できます。</p>
+      <p style="margin-top:.75rem"><strong>Q. 海外旅行の費用管理で注意すべき点はありますか？</strong></p>
+      <p>A. 外国為替レートの変動・海外クレジットカード決済の手数料（1〜3%）・現地ATM手数料・チップ文化（国・シーンによる）などを事前に把握しておきましょう。外務省「海外安全情報」で渡航先の安全状況も必ず確認してください。旅行保険への加入も強くおすすめします。</p>
+      <p style="margin-top:.75rem"><strong>Q. 旅行費用を家族で分担する場合のトラブルを避けるには？</strong></p>
+      <p>A. 事前に全員が費用の合計・分担方法（均等割り・収入比例・各自が担当する項目別など）を明確に合意しておくことが大切です。旅行後に精算するより、旅行前に集金・または共同の旅行資金を作っておく方がトラブルになりにくいとされています。</p>
+      <p style="margin-top:.75rem"><strong>Q. 旅行費用を家計で予算化する際のおすすめの管理方法は？</strong></p>
+      <p>A. 「旅行積立」として月々一定額を専用の口座や封筒に分けておく方法が効果的です。年1回の目標金額を決め、それを12で割った額を毎月自動振替する仕組みを作ると無理なく貯められます。旅行後は実際の支出を記録し、次回の旅行計画の参考にしましょう。</p>
+      <p style="margin-top:1rem;font-size:.85rem;color:#6b7280;border-top:1px solid #d1fae5;padding-top:.75rem">旅行費用の目安はあくまで参考情報です。実際の費用は旅行先・季節・人数・宿泊グレードによって大きく異なります。予約前に各旅行会社・交通機関・宿泊施設の公式サイトで最新の料金をご確認ください。</p>
+      <p style="margin-top:.75rem"><strong>Q. 旅行費用をクレジットカードで支払うメリット・デメリットは？</strong></p>
+      <p>A. メリットは旅行保険の付帯（海外・国内）・ポイント還元・分割払いの選択肢があること、現地でのキャッシュレス利用の利便性です。デメリットは海外での利用手数料（1〜3%）・支払い状況の管理が必要なこと、国によっては使用できない店舗があることです。クレジットカードの旅行保険の補償内容は事前に確認しておきましょう。</p>
+    </div>
+  </details>
+</div>
+<!-- r52-travel-budget-guide -->
+<!-- r31-cookie-banner -->
+<div id="cookie-banner" style="position:fixed;bottom:0;left:0;right:0;background:#1e293b;color:#f1f5f9;padding:1.25rem 1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;z-index:9999;font-size:.85rem;box-shadow:0 -2px 10px rgba(0,0,0,.3)">
+<div style="flex:1;min-width:200px">当サイトはCookieおよびGoogle Analyticsを使用しています。<a href="/privacy-policy.html" style="color:#60a5fa;text-decoration:underline">プライバシーポリシー</a>をご確認ください。</div>
+<div style="display:flex;gap:.5rem;flex-wrap:wrap">
+<button onclick="(function(){localStorage.setItem('cookie-consent','denied');document.getElementById('cookie-banner').style.display='none';})()" style="background:#64748b;color:#fff;border:none;padding:.6rem 1rem;border-radius:.375rem;font-size:.85rem;font-weight:600;cursor:pointer;white-space:nowrap">拒否</button>
+<button onclick="(function(){localStorage.setItem('cookie-consent','granted');document.getElementById('cookie-banner').style.display='none';window.grantConsent && window.grantConsent();})()" style="background:#3b82f6;color:#fff;border:none;padding:.6rem 1.25rem;border-radius:.375rem;font-size:.85rem;font-weight:600;cursor:pointer;white-space:nowrap">同意して閉じる</button>
+</div>
+</div>
+<script>if(localStorage.getItem('cookie-consent'))document.getElementById('cookie-banner').style.display='none'</script>
+<script src="/assets/consent-mode.js"></script>
 </body>
 </html>
